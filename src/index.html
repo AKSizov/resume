@@ -3,36 +3,50 @@
 <head>
     <title>Alex Sizov Resume</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=400, initial-scale=1.0" /> -->
     <meta charset="UTF-8">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
-<body class="w-screen h-[129.411vw] dark:bg-gray-900 dark:text-gray-100 p-[0.5in] flex flex-col">
+<body class="w-[8.5in] h-[11in] dark:bg-gray-900 dark:text-gray-100 p-[0.5in] flex flex-col">
 
     <!-- Header Section -->
-    <div class="selection:w-auto h-16 mx-4 my-4 rounded-md shadow bg-gray-100 dark:bg-gray-800 flex flex-row">
+    <div class="selection:w-auto h-16 mx-2 my-2 rounded-md shadow bg-gray-100 dark:bg-gray-800 flex flex-row">
 
         <!-- Name and logo -->
-        <h1 class="mx-8 my-auto  text-4xl">
-            Alex Sizov <span class="text-gray-500"> - Full Stack Dev</span>
+        <img class="p-1" shape-rendering="crispEdges" src="./SE3-circle-shadow-128x128.svg" alt="Sizov logo" />
+        <h1 class="mx-1 my-auto text-4xl">
+            Alex Sizov <h1 class="text-gray-700 dark:text-gray-300 my-auto text-4xl"> - Full Stack Developer</h1>
         </h1>
 
         <!-- Spacer -->
         <div class="grow"></div>
 
         <!-- Contact info -->
-        <div class="flex flex-col mr-8 my-auto">
-            <p>Text</p>
-            <p>Text 2</p>
+        <div class="flex flex-col mr-3 my-auto text-gray-700 dark:text-gray-300">
+            <div class="flex flex-row gap-2">
+                <span class="material-symbols-outlined">call</span>
+                <p>+1 (703) 508-1720</p>
+            </div>
+            <div class="flex flex-row gap-2">
+                <span class="material-symbols-outlined">mail</span>
+                <p>hireme@sizov.dev</p>
+            </div>
         </div>
     </div>
 
     <!-- Content Section -->
-    <div class="flex mb-4 flex-row h-full">
+    <div class="flex mb-2 flex-row h-full">
 
         <!-- Left Cards -->
-        <div class="mx-4 gap-y-4 flex flex-col basis-2/5 h-full">
-            <div class="basis-1/6 rounded-md bg-gray-100 dark:bg-gray-800 h-64 shadow"></div>
+        <div class="mx-2 gap-y-2 flex flex-col basis-2/5 h-full">
+            <div class="basis-1/6 rounded-md bg-gray-100 dark:bg-gray-800 h-64 shadow p-4">
+                <h3 class="">About Me</h3>
+                <p class="leading-normal font-thin text-xs">So I started to walk into the water. I won't lie to you
+                    boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came
+                    over me. Text 2, Text 3, and Text 4. Last line.</p>
+            </div>
             <div class="basis-2/6 rounded-md bg-gray-100 dark:bg-gray-800 h-64 shadow"></div>
             <div class="basis-2/6 rounded-md bg-gray-100 dark:bg-gray-800 h-64 shadow"></div>
             <div class="basis-1/6 rounded-md bg-gray-100 dark:bg-gray-800 h-64 shadow"></div>
