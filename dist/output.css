@@ -513,10 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .-m-1 {
   margin: -0.25rem;
 }
@@ -541,6 +537,11 @@ video {
   margin-bottom: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -557,6 +558,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mr-2 {
@@ -591,12 +596,12 @@ video {
   height: 100%;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-2 {
   height: 0.5rem;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .h-6 {
@@ -615,8 +620,8 @@ video {
   width: 8.0in;
 }
 
-.w-64 {
-  width: 16rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-12 {
@@ -679,12 +684,16 @@ video {
   row-gap: 0.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-white {
@@ -731,12 +740,16 @@ video {
   padding: 0.5in;
 }
 
-.p-1 {
-  padding: 0.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .py-2 {
@@ -762,9 +775,18 @@ video {
   padding-top: 0px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -782,12 +804,20 @@ video {
   line-height: 1.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-thin {
   font-weight: 100;
 }
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-zinc-700 {
@@ -800,8 +830,8 @@ video {
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
-.drop-shadow {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -814,7 +844,12 @@ video {
   /* Firefox 97+, Safari 15.4+ */
 }
 
-h1, h2 {
+img {
+  image-rendering: pixelated;
+}
+
+h1,
+h2 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -835,6 +870,10 @@ h1, h2 {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:border-none {
+    border-style: none;
+  }
+
   .dark\:bg-zinc-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));

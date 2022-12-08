@@ -4,11 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap');
 
-* { 
+* {
     font-family: 'Inter', sans-serif;
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
-    color-adjust: exact !important;                 /* Firefox 48 – 96 */
-    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+    -webkit-print-color-adjust: exact !important;
+    /* Chrome, Safari 6 – 15.3, Edge */
+    color-adjust: exact !important;
+    /* Firefox 48 – 96 */
+    print-color-adjust: exact !important;
+    /* Firefox 97+, Safari 15.4+ */
 }
 
-h1, h2 { font-family: 'Oswald', sans-serif;}
+img {
+    image-rendering: pixelated;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+}

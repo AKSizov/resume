@@ -7,16 +7,35 @@
     <meta charset="UTF-8">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <style type="text/css" media="print">
+        @page 
+        {
+            size:  auto;   /* auto is the initial value */
+            margin: 0mm;  /* this affects the margin in the printer settings */
+        }
+    
+        html
+        {
+            background-color: #FFFFFF; 
+            margin: 0px;  /* this affects the margin on the html before sending to printer */
+        }
+    
+        body
+        {
+            /* border: solid 1px blue ; */
+            margin: 0.25in 0.25in;
+        }
+        </style>
 </head>
 
-<body class="w-[8.5in] h-[11in] p-[0.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col">
-    <!-- <body class="w-[8.0in] h-[10.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col"> -->
+<!-- <body class="w-[8.5in] h-[11in] p-[0.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col"> -->
+<body class="w-[8.0in] h-[10.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col">
 
     <!-- Header Section -->
-    <div class="selection:w-auto h-16 mx-2 my-2 rounded drop-shadow bg-white dark:bg-zinc-800 flex flex-row">
+    <div class="selection:w-auto h-16 mx-2 my-2 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 flex flex-row">
 
         <!-- Name and logo -->
-        <img class="p-1" shape-rendering="crispEdges" src="./sizov.svg" alt="Sizov logo" />
+        <img class="p-2 w-16 h-16" shape-rendering="crispEdges" src="./sizov.svg" alt="Sizov logo" />
         <h1 class="mx-1 my-auto text-4xl">
             Alex Sizov <h1 class="text-zinc-700 dark:text-zinc-300 my-auto text-4xl"> - Full Stack Developer</h1>
         </h1>
@@ -44,101 +63,101 @@
         <div class="mx-2 gap-y-2 flex flex-col basis-2/5 grow-0 h-full">
 
             <!-- Top Card -->
-            <div class="basis-1/5 rounded drop-shadow bg-white dark:bg-zinc-800 h-64 p-4">
-                <h3 class="">Profile</h3>
-                <p class="leading-normal font-thin text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4">
+                <h3 class="mb-2 font-bold text-lg text-center">Profile</h3>
+                <p class="font-thin text-center text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Tempora et dolore iusto adipisci nobis nam doloremque tenetur? Assumenda unde, omnis perspiciatis
                     magni consequatur aut, nesciunt, rem sequi qui doloremque accusantium.</p>
             </div>
 
             <!-- Languages Card -->
-            <div class="basis-2/5 rounded drop-shadow bg-white dark:bg-zinc-800 h-64 p-4 flex flex-col">
-                <h3 class="">Familiar Languages & Frameworks</h3>
-                <img class="w-64 h-64 m-auto" src="./langs.svg" alt="languages" />
+            <div class="basis-2/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                <h3 class="mb-4 font-bold text-lg text-center">Languages & Frameworks</h3>
+                <img class="mx-4" src="./langs.svg" alt="languages" />
             </div>
 
             <!-- Skills Card -->
-            <div class="basis-1/5 rounded drop-shadow bg-white dark:bg-zinc-800 h-64 p-4 flex flex-col">
-                <h3 class="mb-2">Key Skills</h3>
+            <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                <h3 class="mb-2 font-bold text-lg text-center">Key Skills</h3>
                 <div class="flex grow flex-col justify-around">
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">Linux</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">UI/UX</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">CI/CD</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">VCS</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Hobbies Card -->
-            <div class="basis-1/5 rounded drop-shadow bg-white dark:bg-zinc-800 h-64 p-4">
-                <h3 class="mb-2">Interests</h3>
+            <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 h-64 p-4">
+                <h3 class="mb-2 font-bold text-lg text-center">Interests</h3>
                 <div class="flex grow flex-col justify-around">
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                     <div class="flex flex-row gap-1">
                         <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
-                        <div class="h-2 my-auto grow rounded drop-shadow bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
                     </div>
                 </div>
             </div>
@@ -162,7 +181,7 @@
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-16 flex flex-row">
-                        <img class="mr-2" src="./loopbox.webp" alt="Loopbox Logo" />
+                        <img class="mr-2 w-16 h-16" src="./loopbox.webp" alt="Loopbox Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Loopbox Audio Recorder</h1>
                             <p class="text-zinc-700 dark:text-zinc-300"><span>Mobile App Developer</span>
@@ -192,7 +211,7 @@
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-16 flex flex-row">
-                        <img class="mr-2" src="./strella.webp" alt="Strella Logo" />
+                        <img class="mr-2 w-16 h-16" src="./strella.webp" alt="Strella Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Strella Biotechnology</h1>
                             <p class="text-zinc-700 dark:text-zinc-300"><span>Deployment Engineer</span>
@@ -223,7 +242,7 @@
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-16 flex flex-row">
-                        <img class="mr-2" src="./ezlung.webp" alt="EzLung Logo" />
+                        <img class="mr-2 w-16 h-16" src="./ezlung.webp" alt="EzLung Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">EzLung Medical Ventilators</h1>
                             <p class="text-zinc-700 dark:text-zinc-300"><span>Co-Founder</span>
@@ -253,7 +272,7 @@
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-16 flex flex-row">
-                        <img class="mr-2" src="./adiona.webp" alt="Adiona Logo" />
+                        <img class="mr-2 w-16 h-16" src="./adiona.webp" alt="Adiona Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Adiona Safety Corporation</h1>
                             <p class="text-zinc-700 dark:text-zinc-300"><span>Lead Developer</span>
@@ -283,7 +302,7 @@
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-16 flex flex-row">
-                        <img class="mr-2 p-1" src="./lcl.webp" alt="Landmark L" />
+                        <img class="mr-2 w-16 h-16 p-1" src="./lcl.webp" alt="Landmark L" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Landmark Computer Labs</h1>
                             <p class="text-zinc-700 dark:text-zinc-300"><span>Consultant</span>
