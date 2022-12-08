@@ -7,29 +7,32 @@
     <meta charset="UTF-8">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald&display=swap" rel="stylesheet">
     <style type="text/css" media="print">
-        @page 
-        {
-            size:  auto;   /* auto is the initial value */
-            margin: 0mm;  /* this affects the margin in the printer settings */
+        @page {
+            size: auto;
+            /* auto is the initial value */
+            margin: 0mm;
+            /* this affects the margin in the printer settings */
         }
-    
-        html
-        {
-            background-color: #FFFFFF; 
-            margin: 0px;  /* this affects the margin on the html before sending to printer */
+
+        html {
+            background-color: #FFFFFF;
+            margin: 0px;
+            /* this affects the margin on the html before sending to printer */
         }
-    
-        body
-        {
+
+        body {
             /* border: solid 1px blue ; */
             margin: 0.25in 0.25in;
         }
-        </style>
+    </style>
 </head>
 
 <!-- <body class="w-[8.5in] h-[11in] p-[0.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col"> -->
-<body class="w-[8.0in] h-[10.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col">
+<body class="w-[8.0in] h-[10.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col relative">
 
     <!-- Header Section -->
     <div class="selection:w-auto h-16 mx-2 my-2 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 flex flex-row">
@@ -44,7 +47,7 @@
         <div class="grow"></div>
 
         <!-- Contact info -->
-        <div class="flex flex-col mr-3 my-auto text-zinc-700 dark:text-zinc-300">
+        <div class="flex flex-col mr-3 my-auto text-zinc-500">
             <div class="flex flex-row gap-2">
                 <span class="material-symbols-outlined">call</span>
                 <p>+1 (703) 508-1720</p>
@@ -65,99 +68,94 @@
             <!-- Top Card -->
             <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4">
                 <h3 class="mb-2 font-bold text-lg text-center">Profile</h3>
-                <p class="font-thin text-center text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Tempora et dolore iusto adipisci nobis nam doloremque tenetur? Assumenda unde, omnis perspiciatis
-                    magni consequatur aut, nesciunt, rem sequi qui doloremque accusantium.</p>
+                <div class="flex flex-col gap-2 m-2 mt-1">
+                    <p class="font-thin text-center text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Tempora et dolore iusto adipisci nobis nam doloremque tenetur? Assumenda unde, omnis perspiciatis.</p>
+                </div>
+                
             </div>
 
             <!-- Languages Card -->
-            <div class="basis-2/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
-                <h3 class="mb-4 font-bold text-lg text-center">Languages & Frameworks</h3>
-                <img class="mx-4" src="./langs.svg" alt="languages" />
+            <div
+                class="basis-2/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                <h3 class="font-bold text-lg text-center">Languages & Frameworks</h3>
+                <img class="mx-4 my-auto" src="./langs.svg" alt="languages" />
             </div>
 
             <!-- Skills Card -->
-            <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
-                <h3 class="mb-2 font-bold text-lg text-center">Key Skills</h3>
-                <div class="flex grow flex-col justify-around">
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">Linux</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+            <div
+                class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                <h3 class="font-bold text-lg text-center">Key Skills</h3>
+                <div class="flex flex-col gap-2 m-2 mt-1">
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">Linux Server Management</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">8 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 100%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">UI/UX</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">UI / UX Design</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">CI/CD</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">VMs and Containers</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">VCS</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">CRMs / Customer Service</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">5 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 62.5%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Hobbies Card -->
             <div class="basis-1/5 rounded-xl drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 h-64 p-4">
-                <h3 class="mb-2 font-bold text-lg text-center">Interests</h3>
-                <div class="flex grow flex-col justify-around">
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
+                <h3 class="font-bold text-lg text-center">Interests</h3>
+                <div class="flex flex-col gap-2 m-2 mt-1">
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">Not Linux Server Management</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">8 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 100%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">Not UI / UX Design</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
-                    </div>
-                    <div class="flex flex-row gap-1">
-                        <p class="mr-2 w-12">Skill 1</p>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-violet-600"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
-                        <div class="h-2 my-auto grow rounded-xl bg-zinc-300 dark:bg-zinc-700"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <p class="text-sm">Not VMs and Containers</p>
+                            <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
+                        </div>
+                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                            <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,7 +190,7 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Designed, Developed, Published, and successfully marketed a
                         blackbox/dashcam-like audio recorder designed to help fight discrimination and abuse of
-                        minorities both in the workplace and at home.</p>
+                        minorities both in the workplace and at home. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
             </div>
@@ -222,7 +220,7 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Automated the firmware and database deployment of 600+ Atmel LoRa
                         devices in a mission-critical environment. Modified hardware to withstand strenuous
-                        environmental conditions and reduce radio interference.
+                        environmental conditions and reduce radio interference. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
 
@@ -253,7 +251,9 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Developed software for a quickly scalable medical ventilator to
                         help COVID-19 recovery. Developed realtime firmware for an 8-bit Atmel CPU using C++, Used
-                        Kotlin to develop frontend. Established testing partnership with a medical center in HI.</p>
+                        Kotlin to develop frontend. Established testing partnership with a medical center in HI.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
                 </div>
 
             </div>
@@ -283,6 +283,7 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Designed driving scenarios for Windows and WebGL using Unity 3D,
                         C#, Blender, and 3DS Max. Made promotional materials using Adobe Photoshop, Premiere, and GIMP.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
 
@@ -313,7 +314,7 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Used advanced data recovery and forensics techniques to rescue
                         corrupted and damaged data from Windows EDB and ESE Databases, Hard Drives, and non-windows
-                        OSes.
+                        OSes. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
 
@@ -333,11 +334,16 @@
                     <!-- Job Title -->
                     <div class="h-4 flex flex-row">
                         <span class="mx-1 my-auto text-zinc-500 material-symbols-outlined">update</span>
-                        <p class="mx-1 my-auto text-zinc-500 pt-0.5">Last updated on Dec 8, 2022</p>
+                        <p class="mx-1 my-auto text-zinc-500">Last updated on Dec 8, 2022</p>
                     </div>
                 </div>
 
             </div>
 
         </div>
+    </div>
+
+    <!-- <div class="absolute right-0 bottom-0 bg-zinc-500">
+        <p class="text-xs">Designed by Alex Sizov</p>
+    </div> -->
 </body>
