@@ -55,8 +55,8 @@
         <!-- Left Cards -->
         <div class="mx-2 gap-y-2 flex flex-col basis-2/5 grow-0 h-full">
 
-            <!-- Top Card -->
-            <div class="basis-1/5 rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+            <!-- Links Card -->
+            <div class="rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
                 <!-- <h3 class="mb-2 font-bold text-lg text-center">Profile</h3> -->
                 <div class="flex flex-row grow w-100 h-100">
                     <div class="flex-1 my-auto">
@@ -88,9 +88,9 @@
 
             <!-- Languages Card -->
             <div
-                class="basis-2/5 rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                class="rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col grow">
                 <h3 class="font-bold text-lg text-center">Technologies</h3>
-                <img class="mx-4 my-auto" src="./langs.svg" alt="languages" />
+                <img class="w-72 mx-auto my-auto" src="./langs.svg" alt="languages" />
             </div>
 
             <!-- Skills Card -->
@@ -138,23 +138,28 @@
             </div>
 
             <!-- Hobbies Card -->
-            <div class="basis-1/5 rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 h-64 p-4 flex flex-col">
-                <h3 class="font-bold text-lg text-center">Interests</h3>
-                <div class="flex flex-col gap-2 m-2 mt-1 grow">
-                    <div class="flex flex-row grow">
+            <div class="rounded-md drop-shadow-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                <h3 class="font-bold text-lg text-center">Hobbies / Interests</h3>
+                <div class="flex flex-col gap-2 m-2 mt-1">
+                    <div class="flex flex-row">
                         <div class="flex flex-col flex-1 my-auto">
-                            <span class="material-symbols-outlined !text-5xl mx-auto text-violet-600">movie</span>
+                            <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">movie</span>
                             <h3 class="mx-auto">Film</h3>
                         </div>
-                        <div class="w-0.5 h-100 bg-zinc-300 dark:bg-zinc-700 mx-2 my-4"></div>
+                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
                         <div class="flex flex-col flex-1 my-auto">
-                            <span class="material-symbols-outlined !text-5xl mx-auto text-violet-600">sports_hockey</span>
+                            <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">sports_hockey</span>
                             <h3 class="mx-auto">Hockey</h3>
                         </div>
-                        <div class="w-0.5 h-100 bg-zinc-300 dark:bg-zinc-700 mx-2 my-4"></div>
+                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
                         <div class="flex flex-col flex-1 my-auto">
-                            <span class="material-symbols-outlined !text-5xl mx-auto text-violet-600">piano</span>
+                            <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">piano</span>
                             <h3 class="mx-auto">Piano</h3>
+                        </div>
+                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
+                        <div class="flex flex-col flex-1 my-auto">
+                            <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">scuba_diving</span>
+                            <h3 class="mx-auto">Diving</h3>
                         </div>
                     </div>
                 </div>
@@ -188,9 +193,12 @@
                     </div>
 
                     <!-- Job Description -->
-                    <p class="px-1 font-thin text-sm">Designed, Developed, Published, and successfully marketed a
-                        blackbox/dashcam-like audio recorder designed to help fight discrimination and abuse of
-                        minorities both at home and in the workplace. Learn more at <a href="https://loopbox.io">https://loopbox.io</a></p>
+                    <p class="px-1 font-thin text-sm">
+                        Designed, developed, dublished, and successfully marketed a
+                        blackbox/dashcam-like audio recorder that helps fight discrimination and abuse of
+                        minorities at home and in the workplace, and more.
+                        <a href="https://loopbox.io">https://loopbox.io</a>
+                    </p>
                 </div>
 
             </div>
@@ -218,10 +226,10 @@
                     </div>
 
                     <!-- Job Description -->
-                    <p class="px-1 font-thin text-sm">Automated the firmware and database deployment of 600+ Atmel LoRa
-                        devices in a mission-critical environment. Modified hardware to withstand strenuous
-                        environmental conditions and to reduce radio interference. Learn more about Strella's goal to reduce
-                        food waste at <a href="https://www.strellabiotech.com">https://www.strellabiotech.com</a>
+                    <p class="px-1 font-thin text-sm">Designed the firmware and database deployment of 600+ AVR-based LoRa
+                        sensors in a mission-critical environment. Modified hardware to withstand strenuous
+                        environmental conditions and to reduce radio interference.
+                        <a href="https://www.strellabiotech.com">https://www.strellabiotech.com</a>
                     </p>
                 </div>
 
@@ -250,10 +258,11 @@
                     </div>
 
                     <!-- Job Description -->
-                    <p class="px-1 font-thin text-sm">Developed software for a quickly scalable medical ventilator to
-                        help COVID-19 recovery. Developed realtime firmware for an 8-bit Atmel CPU using C++, Used
-                        Kotlin to develop frontend. Established testing partnership with a medical center in HI.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <p class="px-1 font-thin text-sm">During the COVID-19 ventilator crisis, developed a quickly
+                        scalable medical ventilator to help COVID-19 recovery. Developed realtime firmware for
+                        an 8-bit AVR CPU using C++, designed frontend using Kotlin. Established testing partnership
+                        with a medical center in HI.
+                        <a href="https://ezlung.com">https://ezlung.com</a>
                     </p>
                 </div>
 
@@ -282,9 +291,11 @@
                     </div>
 
                     <!-- Job Description -->
-                    <p class="px-1 font-thin text-sm">Designed driving scenarios for Windows and WebGL using Unity 3D,
-                        C#, Blender, and 3DS Max. Made promotional materials using Adobe Photoshop, Premiere, and GIMP.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <p class="px-1 font-thin text-sm">
+                        Designed driving scenarios to aid in teaching safe driving using Unity3D, Blender, and 3DS Max.
+                        Made promotional materials using Adobe Photoshop, Premiere, and GIMP.
+                        Improved driving safety through use of simulation.
+                        <a href="https://drivesquare.com/products">https://drivesquare.com/products</a>
                     </p>
                 </div>
 
@@ -315,7 +326,7 @@
                     <!-- Job Description -->
                     <p class="px-1 font-thin text-sm">Used advanced data recovery and forensics techniques to rescue
                         corrupted and damaged data from Windows EDB and ESE Databases, Hard Drives, and non-windows
-                        OSes. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        OSes. <a href="https://landmarkcomputer.com">https://landmarkcomputer.com</a>
                     </p>
                 </div>
 
