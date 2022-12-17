@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -523,6 +527,14 @@ video {
 
 .-m-1 {
   margin: -0.25rem;
+}
+
+.-m-6 {
+  margin: -1.5rem;
+}
+
+.-m-5 {
+  margin: -1.25rem;
 }
 
 .mx-2 {
@@ -570,12 +582,21 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
 }
 
 .mt-1 {
@@ -592,6 +613,34 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .flex {
@@ -640,6 +689,14 @@ video {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-\[8\.5in\] {
@@ -736,6 +793,14 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-y-2 {
@@ -872,6 +937,20 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[0\.333rem\] {
+  font-size: 0.333rem;
+}
+
+.\!text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.\!text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -910,6 +989,10 @@ video {
 .text-zinc-500 {
   --tw-text-opacity: 1;
   color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+
+.text-\[0\.rem\] {
+  color: 0.rem;
 }
 
 .drop-shadow-md {
@@ -1002,7 +1085,38 @@ h2 {
   }
 }
 
+@media print {
+  .print\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .print\:drop-shadow-none {
+    --tw-drop-shadow: drop-shadow(0 0 #0000);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+}
+
 .\[\&\>img\]\:mx-auto>img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.\[\&\>img\]\:h-10>img {
+  height: 2.5rem;
+}
+
+.\[\&\>img\]\:w-10>img {
+  width: 2.5rem;
+}
+
+.\[\&\>img\]\:w-1>img {
+  width: 0.25rem;
+}
+
+.\[\&\>img\]\:w-4>img {
+  width: 1rem;
+}
+
+.\[\&\>img\]\:w-8>img {
+  width: 2rem;
 }
