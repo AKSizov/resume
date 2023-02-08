@@ -31,16 +31,16 @@
     </style>
 </head>
 
-<!-- <body class="w-[8.5in] h-[11in] p-[0.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col"> -->
-<body class="w-[8.0in] h-[10.5in] dark:bg-zinc-900 dark:text-zinc-100 flex flex-col relative">
+<!-- <body class="w-[8.5in] h-[11in] p-[0.5in] dark:bg-neutral-900 dark:text-neutral-100 flex flex-col"> -->
+<body class="w-[8.0in] h-[10.5in] dark:bg-neutral-900 dark:text-neutral-100 flex flex-col relative">
 
     <!-- Header Section -->
-    <div class="h-16 mx-2 my-2 rounded-md border dark:border-none bg-white dark:bg-zinc-800 flex flex-row">
+    <div class="h-16 mx-2 my-2 rounded-md border dark:border-none bg-white dark:bg-neutral-800 flex flex-row">
 
         <!-- Name and logo -->
         <img class="p-2 w-16 h-16" shape-rendering="crispEdges" src="./img/sizov.svg" alt="Sizov logo" />
         <h1 class="mx-1 my-auto text-4xl">
-            Alex Sizov <h1 class="text-zinc-700 dark:text-zinc-300 my-auto text-4xl"> - Full Stack Developer</h1>
+            Alex Sizov <h1 class="text-neutral-700 dark:text-neutral-300 my-auto text-4xl"> - Full Stack Developer</h1>
         </h1>
 
         <!-- Spacer -->
@@ -52,10 +52,10 @@
             <div class="flex flex-col">
                 
             </div>
-            <div class="flex flex-col m-2 mr-4 text-zinc-700 dark:text-zinc-300">
+            <div class="flex flex-col m-2 mr-4 text-neutral-700 dark:text-neutral-300">
                 <div class="flex flex-row my-auto gap-1">
                     <span class="material-symbols-outlined text-sm">mail</span>
-                    <p class="text-sm my-auto">hireme@sizov.dev</p>
+                    <p class="text-sm my-auto">hireme@sizov.io</p>
                 </div>
                 <div class="flex flex-row my-auto gap-1">
                     <span class="material-symbols-outlined text-sm">call</span>
@@ -72,153 +72,152 @@
         <div class="mx-2 gap-y-2 flex flex-col basis-2/5 grow-0 h-full">
 
             <!-- Links Card -->
-            <div class="rounded-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
-                <div class="flex flex-row grow w-100 h-100">
-                    <div class="flex flex-col grow mx-auto">
-                        <h1 class="text-xl mx-auto">Useful Links</h1>
-                        <div class="flex flex-col grow gap-0.5">
-                            <div class="flex flex-row mx-auto gap-1 mt-2">
-                                <img src="./img/linkedin-logo.webp" class="w-5 h-5 mx-0.5 my-auto invert dark:invert-0" alt="linkedin logo">
-                                <p class="text-sm my-auto">@aksizov</p>
+            <div class="rounded-md border dark:border-none bg-white dark:bg-neutral-800 p-4 flex flex-col">
+                <div class="flex flex-row grow w-100 h-100 gap-5 px-2 items-center justify-evenly">
+                    <div class="flex flex-col">
+                        <img src="./img/q1.1-inverted-nobg-color.svg" class="h-24" alt="qr code" />
+                        <!-- <h1 class="text-centered mx-auto text-xs tracking-tight font-thin -mt-1">sizov.io/about</h1> -->
+                    </div>
+                    <div class="flex flex-col grow">
+                        <h1 class="text-xl mb-1">Learn more about me:</h1>
+                        <div class="flex flex-col grow-0 shrink-0 gap-0">
+                            <div class="flex flex-row gap-1 mt-1">
+                                <img src="./img/linkedin-logo.webp" class="w-4 h-4 mx-0.5 my-auto invert dark:invert-0" alt="linkedin logo">
+                                <a href="https://www.linkedin.com/in/aksizov/" class="text-sm my-auto">@aksizov</a>
                             </div>
-                            <div class="flex flex-row mx-auto gap-1">
-                                <span class="material-symbols-outlined text-sm">link</span>
-                                <p class="text-sm my-auto">https://sizov.dev</p>
+                            <div class="flex flex-row gap-1 mt-0.5">
+                                <img src="./img/github-mark-white.svg" class="w-4 h-4 mx-0.5 my-auto invert dark:invert-0" alt="github logo">
+                                <a href="https://github.com/AKSizov" class="text-sm my-auto">github.com/AKSizov</a>
                             </div>
-                            <div class="flex flex-row mx-auto gap-1">
-                                <img src="./img/github-mark-white.svg" class="w-5 h-5 mx-0.5 my-auto invert dark:invert-0" alt="github logo">
-                                <p class="text-sm my-auto">github.com/AKSizov</p>
+                            <div class="flex flex-row gap-1">
+                                <span class="material-symbols-outlined !text-[1.2rem]">open_in_new</span>
+                                <a href="https://sizov.io" class="text-sm my-auto">https://sizov.io/about</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="w-0.5 h-100 bg-zinc-300 dark:bg-zinc-700 mx-2"></div>
-                    <div class="flex flex-col">
-                        <img src="./img/qr.svg" class="h-24" alt="qr code" />
-                        <h1 class="text-centered mx-auto text-xs tracking-tight font-thin -mt-1">linktr.ee/asizov</h1>
                     </div>
                 </div>
             </div>
 
             <!-- Languages Card -->
             <div
-                class="rounded-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col grow">
+                class="rounded-md border dark:border-none bg-white dark:bg-neutral-800 p-4 flex flex-col grow">
                 <h3 class="font-bold text-lg text-center">Technologies</h3>
                 <div class="grid grid-cols-7 gap-1 [&>img]:w-10 [&>img]:h-10 [&>img]:mx-auto mt-2">
                     <!-- TODO add azure once familiar-->
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert saturate-0 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jamstack/jamstack-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-[#c0c0c0] dark:invert rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k3s/k3s-original.svg" alt="logo" />
-                    <img class="p-1 border dark:border-zinc-700 dark:bg-zinc-800 rounded-lg" 
+                    <img class="p-1 border dark:border-neutral-700 rounded-lg" 
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="logo" />
                 </div>
-                <p class="text-xs mt-2 text-[0.333rem] tracking-tight font-thin leading-none text-zinc-700 dark:text-zinc-300">
+                <p class="text-xs mt-2 text-[0.333rem] tracking-tight font-thin leading-none text-neutral-700 dark:text-neutral-300">
                     AWS,
                     Android
                     Android Studio,
@@ -280,7 +279,7 @@
 
             <!-- Skills Card -->
             <div
-                class="basis-1/5 rounded-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+                class="basis-1/5 rounded-md border dark:border-none bg-white dark:bg-neutral-800 p-4 flex flex-col">
                 <h3 class="font-bold text-lg text-center">Key Skills</h3>
                 <div class="flex flex-col gap-2 m-2 mt-1">
                     <div class="flex flex-col">
@@ -288,7 +287,7 @@
                             <p class="text-sm">Linux Server Management</p>
                             <p class="rounded-lg text-xs font-medium text-center text-gray-500">8 years</p>
                         </div>
-                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                        <div class="w-full bg-neutral-300 dark:bg-neutral-700 h-1 rounded-full">
                             <div class="bg-violet-600 h-1 rounded-full" style="width: 100%"></div>
                         </div>
                     </div>
@@ -297,7 +296,7 @@
                             <p class="text-sm">UI / UX Design</p>
                             <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
                         </div>
-                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                        <div class="w-full bg-neutral-300 dark:bg-neutral-700 h-1 rounded-full">
                             <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
                         </div>
                     </div>
@@ -306,7 +305,7 @@
                             <p class="text-sm">CI/CD and Testing</p>
                             <p class="rounded-lg text-xs font-medium text-center text-gray-500">6 years</p>
                         </div>
-                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                        <div class="w-full bg-neutral-300 dark:bg-neutral-700 h-1 rounded-full">
                             <div class="bg-violet-600 h-1 rounded-full" style="width: 75%"></div>
                         </div>
                     </div>
@@ -315,7 +314,7 @@
                             <p class="text-sm">CRMs / Customer Service</p>
                             <p class="rounded-lg text-xs font-medium text-center text-gray-500">5 years</p>
                         </div>
-                        <div class="w-full bg-zinc-300 dark:bg-zinc-700 h-1 rounded-full">
+                        <div class="w-full bg-neutral-300 dark:bg-neutral-700 h-1 rounded-full">
                             <div class="bg-violet-600 h-1 rounded-full" style="width: 62.5%"></div>
                         </div>
                     </div>
@@ -323,7 +322,7 @@
             </div>
 
             <!-- Hobbies Card -->
-            <div class="rounded-md border dark:border-none bg-white dark:bg-zinc-800 p-4 flex flex-col">
+            <div class="rounded-md border dark:border-none bg-white dark:bg-neutral-800 p-4 flex flex-col">
                 <h3 class="font-bold text-lg text-center">Hobbies / Interests</h3>
                 <div class="flex flex-col gap-2 mx-2 mt-1">
                     <div class="flex flex-row">
@@ -331,17 +330,17 @@
                             <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">movie</span>
                             <h3 class="mx-auto">Film</h3>
                         </div>
-                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
+                        <div class="h-100 w-0.5 bg-neutral-300 dark:bg-neutral-700 mx-4 my-1"></div>
                         <div class="flex flex-col flex-1 my-auto">
                             <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">sports_hockey</span>
                             <h3 class="mx-auto">Hockey</h3>
                         </div>
-                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
+                        <div class="h-100 w-0.5 bg-neutral-300 dark:bg-neutral-700 mx-4 my-1"></div>
                         <div class="flex flex-col flex-1 my-auto">
                             <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">piano</span>
                             <h3 class="mx-auto">Piano</h3>
                         </div>
-                        <div class="h-100 w-0.5 bg-zinc-300 dark:bg-zinc-700 mx-4 my-1"></div>
+                        <div class="h-100 w-0.5 bg-neutral-300 dark:bg-neutral-700 mx-4 my-1"></div>
                         <div class="flex flex-col flex-1 my-auto">
                             <span class="material-symbols-outlined !text-4xl mx-auto text-violet-600">scuba_diving</span>
                             <h3 class="mx-auto">Diving</h3>
@@ -353,17 +352,17 @@
 
         <!-- CV / Work Experience -->
         <div class="basis-3/5 h-full flex flex-col grow-0 py-2 gap-2">
-            <h1 class="text-4xl px-4">Relevant Work Experience</h1>
+            <h1 class="text-4xl px-4">Recent Work Experience</h1>
 
             <!-- Landmark Labs -->
             <div class="flex flex-row">
 
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 -mb-6 mt-5 mx-2">
-                    <div class="w-6 h-6 rounded-full bg-zinc-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                    <div class="w-6 h-6 rounded-full bg-neutral-500">
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
-                    <div class="w-1 mx-auto -m-1 grow bg-zinc-500"></div>
+                    <div class="w-1 mx-auto -m-1 grow bg-neutral-500"></div>
                 </div>
 
                 <div class="flex flex-col">
@@ -372,8 +371,8 @@
                         <img class="mr-2 w-16 h-16 p-1" src="./img/lcl.webp" alt="Landmark L" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Landmark Computer Labs</h1>
-                            <p class="text-zinc-700 dark:text-zinc-300"><span>Consultant</span>
-                                (2020-2022)</p>
+                            <p class="text-neutral-700 dark:text-neutral-300"><span>Consultant</span>
+                                (2020-2023)</p>
                         </div>
                     </div>
 
@@ -391,7 +390,7 @@
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 -mb-6 mt-5 mx-2">
                     <div class="w-6 h-6 rounded-full bg-teal-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
                     <div class="w-1 mx-auto -m-1 grow bg-teal-500"></div>
                 </div>
@@ -402,7 +401,7 @@
                         <img class="mr-2 w-16 h-16" src="./img/adiona.webp" alt="Adiona Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Adiona Safety Corporation</h1>
-                            <p class="text-zinc-700 dark:text-zinc-300"><span>Lead Developer</span>
+                            <p class="text-neutral-700 dark:text-neutral-300"><span>Lead Developer</span>
                                 (2020-2022)</p>
                         </div>
                     </div>
@@ -424,7 +423,7 @@
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 -mb-6 mt-5 mx-2">
                     <div class="w-6 h-6 rounded-full bg-cyan-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
                     <div class="w-1 mx-auto -m-1 grow bg-cyan-500"></div>
                 </div>
@@ -435,7 +434,7 @@
                         <img class="mr-2 w-16 h-16" src="./img/ezlung.webp" alt="EzLung Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">EzLung Medical Ventilators</h1>
-                            <p class="text-zinc-700 dark:text-zinc-300"><span>Co-Founder</span>
+                            <p class="text-neutral-700 dark:text-neutral-300"><span>Co-Founder</span>
                                 (2020-2020)</p>
                         </div>
                     </div>
@@ -457,7 +456,7 @@
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 -mb-6 mt-5 mx-2">
                     <div class="w-6 h-6 rounded-full bg-lime-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
                     <div class="w-1 mx-auto -m-1 grow bg-lime-500"></div>
                 </div>
@@ -468,7 +467,7 @@
                         <img class="mr-2 w-16 h-16" src="./img/strella.webp" alt="Strella Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Strella Biotechnology</h1>
-                            <p class="text-zinc-700 dark:text-zinc-300"><span>Deployment Engineer</span>
+                            <p class="text-neutral-700 dark:text-neutral-300"><span>Deployment Engineer</span>
                                 (2018-2019)</p>
                         </div>
                     </div>
@@ -489,7 +488,7 @@
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 -mb-6 mt-5 mx-2">
                     <div class="w-6 h-6 rounded-full bg-orange-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
                     <div class="w-1 mx-auto -m-1 grow bg-orange-500"></div>
                 </div>
@@ -500,7 +499,7 @@
                         <img class="mr-2 w-16 h-16" src="./img/loopbox.webp" alt="Loopbox Logo" />
                         <div class="flex flex-col">
                             <h1 class="text-3xl">Loopbox Audio Recorder</h1>
-                            <p class="text-zinc-700 dark:text-zinc-300"><span>Mobile App Developer</span>
+                            <p class="text-neutral-700 dark:text-neutral-300"><span>Mobile App Developer</span>
                                 (2017-2019)</p>
                         </div>
                     </div>
@@ -522,19 +521,19 @@
                 <!-- Path Line -->
                 <div class="flex flex-col h-100 mx-2">
                     <div class="w-6 h-6 rounded-full bg-orange-500">
-                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-zinc-900 bg-white"></div>
+                        <div class="w-4 h-4 mx-auto my-1 rounded-full dark:bg-neutral-900 bg-white"></div>
                     </div>
                 </div>
 
                 <div class="flex flex-col">
                     <!-- Job Title -->
                     <div class="h-4 flex flex-row">
-                        <span class="mx-1 my-auto text-zinc-500 material-symbols-outlined">update</span>
-                        <p class="mx-1 my-auto text-zinc-500">Last updated on Jan 2, 2023</p>
+                        <span class="mx-1 my-auto text-neutral-500 material-symbols-outlined">update</span>
+                        <p class="mx-1 my-auto text-neutral-500">Last updated on Feb 6, 2023</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <p class="ml-auto text-zinc-500 -mt-5 mr-1 text-xs">Resume source available on my Github!</p>
+    <p class="ml-auto text-neutral-500 -mt-5 mr-1 text-xs">Resume source available on my Github!</p>
 </body>
